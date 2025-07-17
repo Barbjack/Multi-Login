@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Login", "Multi Login\Multi Login.csproj", "{99DFF868-969E-4F61-8F15-5A97E6561A11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99DFF868-969E-4F61-8F15-5A97E6561A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DFF868-969E-4F61-8F15-5A97E6561A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DFF868-969E-4F61-8F15-5A97E6561A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DFF868-969E-4F61-8F15-5A97E6561A11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D02A521C-4CDF-43E4-A4F8-320B3BF6892E}
+	EndGlobalSection
+EndGlobal

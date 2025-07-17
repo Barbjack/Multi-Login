@@ -1,0 +1,38 @@
+﻿<Window x:Class="Multi_Login.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Multi_Login"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="User Management" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+         <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Form -->
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+            <TextBox x:Name="txtUsername" Width="150" Margin="5" materialDesign:HintAssist.Hint="Username"/>
+             <TextBox x:Name="txtPassword" Width="150" Margin="5" materialDesign:HintAssist.Hint="Password"/>
+            <TextBox x:Name="txtRole" Width="150" Margin="5" materialDesign:HintAssist.Hint="Role"/>
+            <CheckBox x:Name="chkStatus" Content="Active" Margin="5"/>
+                    <Button Content="Add" Click="BtnAdd_Click" Margin="5"/>
+                    <Button Content="Update" Click="BtnUpdate_Click" Margin="5"/>
+                    <Button Content="Delete" Click="BtnDelete_Click" Margin="5"/>
+                </StackPanel>
+
+                <!-- DataGrid -->
+                <DataGrid x:Name="dgUsers" Grid.Row="1" AutoGenerateColumns="False" SelectionChanged="dgUsers_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Username" Binding="{Binding Username}"/>
+                        <DataGridTextColumn Header="Password" Binding="{Binding Password}"/>
+                        <DataGridTextColumn Header="Role" Binding="{Binding Role}"/>
+                        <DataGridCheckBoxColumn Header="Active" Binding="{Binding Status}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Window>
